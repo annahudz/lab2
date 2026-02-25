@@ -91,7 +91,7 @@ void demoPriorityQueue() {
     cout << endl;
 }
 
-// Інтерактивний режим Priority Queue: вводимо одразу всі значення і пріоритети
+
 void interactivePriorityQueueDemoStyle() {
     Node* pq = nullptr;
     int n = 0;
