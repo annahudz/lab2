@@ -9,9 +9,8 @@
 using namespace std;
 using namespace std::chrono;
 
-// =======================
+
 // STACK FUNCTIONS
-// =======================
 template <typename StackType>
 void demoStack(StackType& stack) {
     Circle c1{ 1,1,1 }, c2{ 2,2,2 }, c3{ 3,3,3 };
@@ -77,9 +76,7 @@ void interactiveStack(StackType& stack) {
     } while (choice != 0);
 }
 
-// =======================
 // PRIORITY QUEUE FUNCTIONS
-// =======================
 void demoPriorityQueue() {
     Node* pq = nullptr;
     pq = push(pq, 4, 2);
@@ -129,9 +126,7 @@ void interactivePriorityQueueDemoStyle() {
     delete[] priorities;
 }
 
-// =======================
 // BENCHMARK
-// =======================
 template <typename StackType>
 void benchmarkStack(const string& name, int N) {
     StackType stack{};
@@ -184,9 +179,7 @@ void benchmarkPriorityQueue() {
         << duration<double>(end - start).count() << " sec\n";
 }
 
-// =======================
 // MAIN
-// =======================
 int main() {
     int labChoice = 0;
     cout << "Select Lab:\n1 Lab A (Stack)\n2 Lab B (Priority Queue)\nChoice: ";
